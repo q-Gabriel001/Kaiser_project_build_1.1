@@ -1,0 +1,140 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxp0m8rqwjrk3"]
+
+[ext_resource type="Script" uid="uid://b188yxesqv1bu" path="res://scripts/game_settings/tela_inicial.gd" id="1_tfqq2"]
+[ext_resource type="Texture2D" uid="uid://bteocpqhhxktr" path="res://Assets/backgrounds/Menu_background.png" id="1_xlum0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tfqq2"]
+texture = ExtResource("1_xlum0")
+modulate_color = Color(0.481789, 0.481789, 0.481789, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfqq2"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_xlum0"]
+
+[sub_resource type="FontVariation" id="FontVariation_tfqq2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfe21"]
+draw_center = false
+corner_detail = 1
+anti_aliasing = false
+anti_aliasing_size = 10.0
+
+[node name="TelaInicial" type="CanvasLayer"]
+script = ExtResource("1_tfqq2")
+metadata/_edit_horizontal_guides_ = [-37.0]
+
+[node name="LindobarBack" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_tfqq2")
+
+[node name="Control" type="Control" parent="LindobarBack"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -240.0
+offset_right = -240.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="LindobarBack/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 239.0
+offset_top = 921.0
+offset_right = 2158.0
+offset_bottom = 1074.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Iniciar" type="Button" parent="LindobarBack/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_disabled_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxFlat_tfqq2")
+text = "Iniciar Jogo"
+icon = SubResource("ViewportTexture_xlum0")
+flat = true
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Continuar" type="Button" parent="LindobarBack/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_disabled_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxFlat_tfqq2")
+text = "Continuar"
+flat = true
+
+[node name="Opcoes" type="Button" parent="LindobarBack/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_disabled_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxFlat_tfqq2")
+text = "Opções"
+flat = true
+
+[node name="Sair" type="Button" parent="LindobarBack/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_disabled_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_colors/font_hover_color = Color(0.501961, 0.501961, 0.501961, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxFlat_tfqq2")
+text = "Sair Do Jogo"
+flat = true
+icon_alignment = 1
+
+[node name="CanvasLayer" type="Node" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -958.0
+offset_top = -239.0
+offset_right = 240.0
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.6, 1)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_tfqq2")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_jfe21")
+text = "Lobos e Loucos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="LindobarBack/Control/HBoxContainer/Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="LindobarBack/Control/HBoxContainer/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="LindobarBack/Control/HBoxContainer/Opcoes" to="." method="_on_opcoes_pressed"]
+[connection signal="pressed" from="LindobarBack/Control/HBoxContainer/Sair" to="." method="_on_sair_pressed"]

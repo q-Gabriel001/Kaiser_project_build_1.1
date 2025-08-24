@@ -1,0 +1,211 @@
+[gd_scene load_steps=14 format=3 uid="uid://bdu14a03uvpmn"]
+
+[ext_resource type="Script" uid="uid://dkaeiym5mjxum" path="res://scripts/game_settings/tutoras.gd" id="1_ctffh"]
+[ext_resource type="Texture2D" uid="uid://d1k7wfns8pbx6" path="res://Assets/backgrounds/background_1.jpg" id="1_iqkkp"]
+[ext_resource type="FontFile" uid="uid://crkrfqffc4x28" path="res://UI/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_af48e"]
+[ext_resource type="Texture2D" uid="uid://ble6g8jxsv2tv" path="res://Assets/characters/Detetive.png" id="2_kry4g"]
+[ext_resource type="Texture2D" uid="uid://dgwb7rsoipmob" path="res://Assets/characters/MainChar.png" id="3_cixbb"]
+[ext_resource type="Script" uid="uid://67hgmhuadijm" path="res://scripts/characters/detetive_tutoras.gd" id="4_w2fsg"]
+[ext_resource type="Script" uid="uid://cttfx2210cyjd" path="res://scripts/characters/player_tutoras.gd" id="6_wwde3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwde3"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rxp8s"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wewhf"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_af48e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_af48e"]
+bg_color = Color(1, 0, 0, 1)
+border_color = Color(1, 0, 0, 1)
+border_blend = true
+corner_detail = 10
+shadow_color = Color(1, 0, 0, 0.996078)
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2fsg"]
+bg_color = Color(0.207769, 0.569612, 0, 1)
+border_color = Color(0.207769, 0.569612, 0, 1)
+border_blend = true
+shadow_color = Color(0.207769, 0.569612, 0, 1)
+shadow_size = 6
+
+[node name="Tutoras" type="Node2D"]
+script = ExtResource("1_ctffh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = 830.0
+offset_right = 1898.0
+offset_bottom = 983.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="camomila" type="Button" parent="CanvasLayer/UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_wwde3")
+text = "CAMOMILA"
+flat = true
+icon_alignment = 1
+
+[node name="po_de_prata" type="Button" parent="CanvasLayer/UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_rxp8s")
+text = "PÓ DE PRATA"
+flat = true
+icon_alignment = 1
+
+[node name="aconito" type="Button" parent="CanvasLayer/UI/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_hover_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_wewhf")
+text = "ACONITO"
+flat = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = 183.0
+offset_right = 1900.0
+offset_bottom = 328.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.4)
+alignment = 1
+
+[node name="Mensagem" type="Label" parent="CanvasLayer/UI/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_af48e")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(962, 542)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_iqkkp")
+
+[node name="Detetive_script" type="Node2D" parent="."]
+position = Vector2(400, 630)
+script = ExtResource("4_w2fsg")
+
+[node name="inimigo" type="Sprite2D" parent="Detetive_script"]
+position = Vector2(946, 0)
+texture = ExtResource("2_kry4g")
+
+[node name="Inimigo" type="Label" parent="Detetive_script"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 800.0
+offset_top = -585.0
+offset_right = 1300.0
+offset_bottom = -483.0
+grow_horizontal = 2
+theme_override_constants/line_spacing = 30
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 40
+text = "Osvaldo
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="hp_inimigo" type="ProgressBar" parent="Detetive_script/Inimigo"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -7.5
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_styles/fill = SubResource("StyleBoxFlat_af48e")
+value = 100.0
+
+[node name="player_script" type="Node2D" parent="."]
+scale = Vector2(-1, 1)
+script = ExtResource("6_wwde3")
+
+[node name="player" type="Sprite2D" parent="player_script"]
+position = Vector2(-600, 630)
+texture = ExtResource("3_cixbb")
+
+[node name="Player" type="Label" parent="player_script"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 45.0
+offset_right = 300.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(-1, 1)
+theme_override_constants/line_spacing = 30
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 40
+text = "Player
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="hp_player" type="ProgressBar" parent="player_script/Player"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -9.5
+offset_right = 250.0
+offset_bottom = 9.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_w2fsg")
+value = 100.0

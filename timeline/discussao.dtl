@@ -1,0 +1,49 @@
+join principal center
+principal: …É, foi isso que nos falaram.
+join Detetive leftmost
+Detetive: O propósito foi pra descobrir se você era, de fato, um cidadão racional.
+join Isla leftmost
+Isla: E eu sou o quê?
+join Detetive leftmost
+Detetive: Vamos discutir. Nós três vamos para investigar. A Isla é incrivelmente boa em interrogar as pessoas.
+join principal leftmost
+principal: E como disse, eu morri na visão dos meus vizinhos. Eu vou ter que evitar ser visto.
+join Detetive leftmost
+Detetive: Sim. Vou te acompanhar, mas a investigação fica com você. Acha as pistas e deduza o licantropo que queria te matar.
+join Detetive leftmost
+Detetive: Eu preciso pegar o criminoso de verdade…
+Detetive: Eu tô sentindo que vai acabar ficando tudo pra mim.
+join principal leftmost
+principal: Eu ainda preciso de uma arma que consiga derrotar lobisomens.
+join Detetive leftmost
+Detetive: Tá, pega. Aqui. Usa isso, eu comprei numa loja enquanto os dois estavam no bar.
+join principal leftmost
+principal: Um cano de metal… Acho que eu sei porque disso, mas ainda assim…
+principal: A Isla tem luvas de prata, eu não posso ter uma arma de verdade?
+join Detetive leftmost
+Detetive: Não.
+join principal leftmost
+principal: Droga.
+join Isla leftmost
+Isla: Eu li extensos livros e vi muitos filmes, jovem. Comparada a uma aprendiz de Holmes, nada pode fazer.
+join Detetive leftmost
+Detetive: Ela já foi mordida umas três vezes mas sobreviveu. Sobre a nossa investigação…
+join principal leftmost
+principal: O objetivo é eliminar os lobisomens, mas é importante nós procurarmos pistas sobre como essa cidade funciona.
+join Detetive leftmost
+Detetive: Exatamente. Vamos checar todos os cantos. Nosso objetivo vai além de conter esses… monstros.
+join principal leftmost
+principal: Parece que é algo bem mais pessoal com ele do que pra mim. Eu quase morri, mas o desprezo dele é em outro nível.
+join Detetive leftmost
+Detetive: Só pra recapitular, Isla interroga as pessoas, eu vou atrás do mais inteligente, e você acha o seu assassino.
+Detetive: Só pra explicar, por mais que a sociedade tenha esquecido dos detetives, o Lindobar recompensa detetives por deterem os lobisomens.
+join Isla leftmost
+Isla: A certo ponto, as matanças incomodam os principais profissionais que frequentam lá.
+join Detetive leftmost
+Detetive: Profissionalmente loucos, só se for.
+join principal center
+principal: Então, o dono recolhe o dinheiro e uma porcentagem é uma recompensa por derrotar os lobisomens.
+join Detetive leftmost
+Detetive: O governo não liga, porque a maioria dos que tentam são despreparados e acabam quase morrendo.
+join Detetive center
+Detetive: Descansem um pouco e nós já iremos partir pro complexo.

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://yu5ijlm0o2px"]
+
+[ext_resource type="Script" uid="uid://dmbbtnhs4weqe" path="res://scripts/game_settings/discussao.gd" id="1_voulb"]
+[ext_resource type="Texture2D" uid="uid://d1k7wfns8pbx6" path="res://Assets/backgrounds/background_1.jpg" id="1_ytjs5"]
+[ext_resource type="Texture2D" uid="uid://dgwb7rsoipmob" path="res://Assets/characters/MainChar.png" id="3_nx4re"]
+[ext_resource type="Texture2D" uid="uid://ble6g8jxsv2tv" path="res://Assets/characters/Detetive.png" id="4_2omtx"]
+[ext_resource type="Texture2D" uid="uid://vpjxtgammte6" path="res://Assets/characters/Isla.png" id="4_voulb"]
+
+[node name="Discussao" type="Node2D"]
+script = ExtResource("1_voulb")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(962, 543.5)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_ytjs5")
+
+[node name="Detetive" type="Sprite2D" parent="."]
+position = Vector2(1293, 650)
+texture = ExtResource("4_2omtx")
+
+[node name="prota" type="Sprite2D" parent="."]
+position = Vector2(1055, 650)
+scale = Vector2(-1, 1)
+texture = ExtResource("3_nx4re")
+
+[node name="isla" type="Sprite2D" parent="."]
+position = Vector2(857, 650)
+scale = Vector2(-1, 1)
+texture = ExtResource("4_voulb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -45.0
+offset_top = -24.0
+offset_right = 1977.0
+offset_bottom = 1162.0
+color = Color(0, 0, 0, 1)

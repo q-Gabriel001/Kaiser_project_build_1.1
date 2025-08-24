@@ -1,0 +1,24 @@
+npc_capuz: Você...tem cheiro de batata frita.
+join principal leftmost
+principal: Não, eu não tenho. O osvaldo me mandou
+npc_capuz: Ah, ele. Isso melhora um pouco as coisas. Achei que era louco que nem a Isla, mas pelo jeito ainda não.
+join principal leftmost
+principal: Não quero ser também. Explica o porquê de eu estar aqui.
+npc_capuz: Quão impaciente...O apartamento onde você estava tinha o seu pretendente assassino.
+npc_capuz: Sabíamos disso até agora. Mas tem mais um, menos errático. Essa é a chance de vingança, jovem...
+npc_capuz: Osvaldo te mandou aqui porque ele acha que já arriscou muito, te salvou durante a investigação dele porque é coração mole.
+join principal leftmost
+principal: …Bom saber. Imagino que eu vou com a Isla, a noite, né? E o objetivo\: eliminar esses lobisomens.
+join principal leftmost
+principal: Não vou deixar transparecer o que realmente quero fazer.
+[signal arg="isla2"]
+[wait time="8.0"]
+join Isla center
+Isla: Funciona pra mim! Estava ocupada, mas homem-capuz, considere essa investigação como aceita!
+npc_capuz: É pra eliminar os lobisomens, não investigar ou sei lá o que você acha que é investigar.
+join principal center
+principal: Sim, sim. Vamos enfrentar os lobinhos. Bora, Isla.
+join Isla leftmost
+Isla: Ei! Eu sou a Holmes! Eu que mando! Mas ok.
+[wait time="3.0"]
+[signal arg="scene_discussao"]
